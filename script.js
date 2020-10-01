@@ -46,19 +46,8 @@ $(".searchBtn").on("click", (search) => {
     selectedCityBtn.text(city);
     $("#savedCities").prepend(selectedCityBtn);
 
+    // TODO: Setting up AJAX to pull WEATHER DATA
+
+
 }); 
 
-$.ajax({
-        url: "https://api.openweathermap.org/data/2.5/weather?" + city + "q=&appid=7c97e50f070e269534e301c206d179f4",
-        method: "GET"
-    }).then(function(response) {
-        cityName = response.name
-        cityTemp = ((response.main.temp) * 1.8 - 459.67).toFixed(0)
-        cityWind = ((response.wind.speed) * .6214).toFixed(1)
-        cityDew = response.main.humidity
-        cityLat = response.coord.lat
-        cityLong = response.coord.lon
-        curDate = response.dt
-        forcastPic = response.weather[0].icon
-        console.log(cityName)
-    });
