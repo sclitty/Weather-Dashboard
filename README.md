@@ -1,5 +1,5 @@
 # Weather-Dashboard
-# Weather Dashboard utilizing OpenWeather API
+Weather Dashboard / OpenWeather API
 
 **Utilizing bootstrap for a mobile responsive layout.**
 
