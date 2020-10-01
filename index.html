@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Man</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+            <h1 class="display-4">Weather Dashboard</h1>
+            <p class="lead">Stay informed with current and forecasted weather!</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <row class="row weather-box">
+            <!-- Search Container  -->
+            <column class="col-md-4 search-list">
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control city-entry" placeholder="Search" aria-label="City Name" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary searchBtn" type="button" id="button-addon2"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                      </svg></button>
+                    </div>
+                  </div>
+                <br>
+                
+                <div class="list-group">
+                  <button type="button" class="list-group-item list-head" disabled>
+                      Selected Cities
+                  </button>
+                  <button type="button" class="list-group-item list-group-item-action"></button>
+                </div>
+            </column>
+
+            <!-- City weather information to be posted here! -->
+            <column class="col-md-8">
+              <row class="row">
+                  <column class="col-sm-12 city-center justify-content-end hide">
+                    <h5 id="cityName"></h5>
+                    <div id="cityDate"></div>
+                    <div id="cityTemp"></div>
+                    <div id="cityDew"></div>
+                    <div id="cityWind"></div>
+                    <div id="cityUV"></div>
+                    <img src="" alt="city weather icon" width="100" height="100">
+                  </column>
+              </row>
+            </column>
+            
+        </row>  
+        
+        <!-- 5-Day Forecast -->
+        <row class="row forecastRow justify-content-end">
+            <column class="col-md-2 forecast-card justify-content-center hide">
+                <!-- Day 1 forecast goes here! -->
+                <div id="date1" class="dateLook"></div>
+                <div id="temp1"></div>
+                <div id="dew1"></div>
+                <img id= "forecastPic1" src="" alt="ForecastIcon" width="100" height="100">
+                <div id=curStatus1></div>
+            </column>
+            <column class="col-md-2 forecast-card justify-content-center hide">
+                <!-- Day 2 forecast goes here! -->
+                <div id="date2" class="dateLook"></div>
+                <div id="temp2"></div>
+                <div id="dew2"></div>
+                <img id="forecastPic2" src="" alt="ForecastIcon" width="100" height="100">
+                <div id="curStatus2"></div>
+            </column>
+            <column class="col-md-2 forecast-card justify-content-center hide">
+                <!-- Day 3 forecast goes here! -->
+                <div id="date3" class="dateLook"></div>
+                <div id="temp3"></div>
+                <div id="dew3"></div>
+                <img id="forecastPic3" src="" alt="ForecastIcon" width="100" height="100">
+                <div id=curStatus3></div>
+            </column>
+            <column class="col-md-2 forecast-card justify-content-center hide">
+                <!-- Day 4 forecast goes here! -->
+                <div id="date4" class="dateLook"></div>
+                <div id="temp4"></div>
+                <div id="dew4"></div>
+                <img id="forecastPic4" src="" alt="ForecastIcon" width="100" height="100">
+                <div id="curStatus4"></div>
+            </column>
+            <column class="col-md-2 forecast-card justify-content-center hide">
+                <!-- Day 5 forecast goes here! -->
+                <div id="date5" class="dateLook"></div>
+                <div id="temp5"></div>
+                <div id="dew5"></div>
+                <img id="forecastPic5" src="" alt="ForecastIcon" width="100" height="100">
+                <div id="curStatus5"></div>
+            </column>
+          </row>         
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

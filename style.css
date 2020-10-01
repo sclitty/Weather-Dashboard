@@ -1,0 +1,50 @@
+/* Jumbotron Styling */
+/* font-family: 'Days One', sans-serif;
+font-family: 'Press Start 2P', cursive; */
+
+body {
+    background-color: rgba(51, 51, 51, 0.253);
+}
+
+.jumbotron {
+    background-image: url("images/pexels-andre-furtado-1162251.jpg");
+    background-size: cover;
+    background-position: 0 78%;
+    color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P', cursive;
+    opacity: .6;
+    text-align: center;
+}
+
+.lead {
+    color: rgb(52, 202, 47);
+}
+
+.list-group {
+    font-family: 'Days One', sans-serif;
+    font-size: 25px;
+}
+
+.list-head {
+    background: #333;
+}
+
+.searchBtn {
+    background: rgba(94, 147, 216, 0.658);
+}
+
+.city-center {
+    background-color: rgb(247, 247, 247);
+    padding: 150px;
+    margin-top: 24px;
+    border-radius: 5px;
+}
+
+.forecast-card {
+    background-color: rgb(247, 247, 247);
+    padding: 75px;
+    margin-top: 10px;
+    margin-right: 2px;
+    border-radius: 5px;
+
+}
