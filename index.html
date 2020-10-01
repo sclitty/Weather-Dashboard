@@ -37,18 +37,18 @@
                   </div>
                 <br>
                 
-                <div class="list-group">
+                <div class="list-group" >
                   <button type="button" class="list-group-item list-head" disabled>
                       Selected Cities
                   </button>
-                  <button type="button" class="list-group-item list-group-item-action"></button>
+                  <button type="button" id="savedCities" class="list-group-item list-group-item-action"></button>
                 </div>
             </column>
 
             <!-- City weather information to be posted here! -->
             <column class="col-md-8">
               <row class="row">
-                  <column class="col-sm-12 city-center justify-content-end hide">
+                  <column id="currentCity" class="col-sm-12 city-center justify-content-end hide">
                     <h5 id="cityName"></h5>
                     <div id="cityDate"></div>
                     <div id="cityTemp"></div>
@@ -61,10 +61,10 @@
             </column>
             
         </row>  
-        
+
         <!-- 5-Day Forecast -->
         <row class="row forecastRow justify-content-end">
-            <column class="col-md-2 forecast-card justify-content-center hide">
+            <column id="day1" class="col-md-2 forecast-card justify-content-center hide">
                 <!-- Day 1 forecast goes here! -->
                 <div id="date1" class="dateLook"></div>
                 <div id="temp1"></div>
@@ -72,7 +72,7 @@
                 <img id= "forecastPic1" src="" alt="ForecastIcon" width="100" height="100">
                 <div id=curStatus1></div>
             </column>
-            <column class="col-md-2 forecast-card justify-content-center hide">
+            <column id="day2" class="col-md-2 forecast-card justify-content-center hide">
                 <!-- Day 2 forecast goes here! -->
                 <div id="date2" class="dateLook"></div>
                 <div id="temp2"></div>
@@ -80,7 +80,7 @@
                 <img id="forecastPic2" src="" alt="ForecastIcon" width="100" height="100">
                 <div id="curStatus2"></div>
             </column>
-            <column class="col-md-2 forecast-card justify-content-center hide">
+            <column id="day3" class="col-md-2 forecast-card justify-content-center hide">
                 <!-- Day 3 forecast goes here! -->
                 <div id="date3" class="dateLook"></div>
                 <div id="temp3"></div>
@@ -88,7 +88,7 @@
                 <img id="forecastPic3" src="" alt="ForecastIcon" width="100" height="100">
                 <div id=curStatus3></div>
             </column>
-            <column class="col-md-2 forecast-card justify-content-center hide">
+            <column id="day4" class="col-md-2 forecast-card justify-content-center hide">
                 <!-- Day 4 forecast goes here! -->
                 <div id="date4" class="dateLook"></div>
                 <div id="temp4"></div>
@@ -96,7 +96,7 @@
                 <img id="forecastPic4" src="" alt="ForecastIcon" width="100" height="100">
                 <div id="curStatus4"></div>
             </column>
-            <column class="col-md-2 forecast-card justify-content-center hide">
+            <column id="day5" class="col-md-2 forecast-card justify-content-center hide">
                 <!-- Day 5 forecast goes here! -->
                 <div id="date5" class="dateLook"></div>
                 <div id="temp5"></div>
@@ -110,8 +110,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js" integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    
+
+
 </body>
 
 </html>

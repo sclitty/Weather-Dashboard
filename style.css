@@ -22,7 +22,11 @@ body {
 
 .list-group {
     font-family: 'Days One', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.list-group-item-action {
+    font-size: 14px;
 }
 
 .list-head {
@@ -35,7 +39,7 @@ body {
 
 .city-center {
     background-color: rgb(247, 247, 247);
-    padding: 150px;
+    padding: 100px;
     margin-top: 24px;
     border-radius: 5px;
 }
@@ -43,8 +47,11 @@ body {
 .forecast-card {
     background-color: rgb(247, 247, 247);
     padding: 75px;
-    margin-top: 10px;
-    margin-right: 2px;
+    margin-top: 15px;
+    margin-left: 2px;
     border-radius: 5px;
+}
 
+.hide {
+    display: none;
 }
